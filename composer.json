@@ -1,0 +1,31 @@
+{
+    "name": "jezzdk/swaggo",
+    "description": "A package for creating OpenAPI 3 specification files.",
+    "type": "library",
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jezzdk\\Swaggo\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jezzdk\\Swaggo\\SwaggoServiceProvider"
+            ],
+            "aliases": {
+                "Swaggo": "Jezzdk\\Swaggo\\Facades\\Swaggo"
+            }
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jess Stopa",
+            "email": "jess@stopa.dk"
+        }
+    ],
+    "minimum-stability": "dev"
+}
